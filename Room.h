@@ -1,3 +1,6 @@
+#ifndef ROOM_INCLUDE
+#define ROOM_INCLUDE
+#include "Item.h"
 #include <string>
 #include <vector>
 
@@ -18,3 +21,4 @@ private:
 
 
 
+#endif

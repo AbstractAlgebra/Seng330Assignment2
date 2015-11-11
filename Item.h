@@ -1,3 +1,6 @@
+#ifndef ITEM_INCLUDE
+#define ITEM_INCLUDE
+
 #include <string>
 class Item{
 public:
@@ -24,3 +27,5 @@ std::string Item::getDescription() const{
 bool operator==(Item i1, Item i2){
 	return i1.getDescription()==i2.getDescription();
 }
+
+#endif
