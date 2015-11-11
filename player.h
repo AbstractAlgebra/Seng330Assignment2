@@ -2,7 +2,18 @@
 #define PLAYER_INCLUDE
 
 #include "Item.h"
+#include <vector>
 
-std::vector<Item> inventory;
+class Player{
+public:
+	Player(const std::string& name);
+
+
+private:
+	std::string name;
+	std::vector<Item> inventory;
+
+
+};
 
 #endif // PLAYER_INCLUDE

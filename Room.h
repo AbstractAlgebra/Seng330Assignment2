@@ -11,7 +11,7 @@ class Room
 public:
 	Room(const std::string& description);
 
-	void addDoorToRoom(const Door& door);
+	void addDoorToRoom(Door door);
 
 	void removeFromRoomInventory(const Item& item);
 	

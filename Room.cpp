@@ -15,7 +15,8 @@ Room::Room(const std::string& description)
 	this->doors = std::vector<Door>();
 }
 
-void Room::addDoorToRoom(const Door& door){
+//This method adds a door to the room
+void Room::addDoorToRoom(Door door){
 	doors.push_back(door);
 
 }
@@ -26,10 +27,12 @@ void Room::removeFromRoomInventory(const Item& item)
 	std::remove(inventory.begin(), inventory.end(), item);
 }
 
+//This method adds an item to the room inventory
 void Room::addItemToRoomInventory(const Item& item){
 	inventory.push_back(item);
 }
 
+//This method gets the description of a room
 const std::string& Room::getDescription() const
 {
 	return description;
