@@ -37,3 +37,7 @@ const std::string& Room::getDescription() const
 {
 	return description;
 }
+
+void Room::setDescription(const std::string& newDescription){
+	this->description = newDescription;
+}

@@ -11,7 +11,7 @@
 int main()
 {
 	//setup of room
-	Room room1("room with a key on the floor and a door on the wall");
+	Room room1("room with a key on the floor and a locked door on the wall");
 
 	Item key1("Key",true);
 
@@ -30,20 +30,48 @@ int main()
 
 	Player player(inputName);
 
+	//declaration of command string 
+	std::string command;
+
+	std::getline(std::cin,command);
+
 	//Game loop
 	while(true){
 		std::cout << "You are in a " << room1.getDescription() << std::endl;
-		std::cout << "What would you like to do?" << std::endl;
-		std::string cmd;
-		
-		std::cin >> cmd;
+		std::cout << "What would you like to do?" << std::endl;	
+	
+		std::getline (std::cin, command);
 
-		if(cmd == "pick" || cmd == "up" || cmd == "key"){
-			break;
-
+		//handles command to pick up the key
+		if (command == "pick up key" && room1.getDescription()=="room with a key on the floor and a locked door on the wall"){
+			room1.setDescription("room with a locked door on the wall");
+			std::cout << std::endl;
+			player.addItemToPlayerInventory(key1);
+			
+			continue;	
 		}
-		std::cout << std::endl;
+
+		//handles command to unlock door
+		else if (command == "unlock door" && room1.getDescription()=="room with a locked door on the wall"){
+			door1.unlock();
+			player.removeItemFromPlayerInventory(key1);
+			room1.setDescription("room with an unlocked door on the wall");
+			std::cout << std::endl;
+			continue;
+		}
+
+		else if (command == "open door" && room1.getDescription() == "room with an unlocked door on the wall"){
+			break;
+		}
+
+
+
+		else {
+			std::cout << std::endl << "INVALID COMMAND" << std::endl << std::endl;
+		}
 	}
+
+	std::cout << std::endl << "Congratulations " << player.getName() << " you escaped the room!" << std::endl; 
 
 	return 0;
 }

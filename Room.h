@@ -19,6 +19,8 @@ public:
 	
 	const std::string& getDescription() const;
 
+	void setDescription(const std::string& newDescription);
+
 
 private:
 	std::vector<Item> inventory;

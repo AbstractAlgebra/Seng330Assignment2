@@ -7,6 +7,9 @@
 class Player{
 public:
 	Player(const std::string& name);
+	void addItemToPlayerInventory(const Item& item);
+	void removeItemFromPlayerInventory(const Item& item);
+	std::string getName();
 
 
 private:
