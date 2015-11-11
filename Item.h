@@ -2,11 +2,16 @@
 #define ITEM_INCLUDE
 
 #include <string>
-class Item{
+
+class Item
+{
 public:
-	Item(std::string description, bool isKey);
+	Item(const std::string& description, bool isKey);
+
+	
 	bool getIsKey() const;
-	std::string getDescription() const;
+
+	const std::string& getDescription() const;
 
 
 private:
@@ -15,17 +20,6 @@ private:
 
 };	
 
-bool Item::getIsKey() const{
-	return this->isKey;
-}
-
-std::string Item::getDescription() const{
-	return this->description;
-
-}
-
-bool operator==(Item i1, Item i2){
-	return i1.getDescription()==i2.getDescription();
-}
+bool operator==(const Item& i1, const Item& i2);
 
 #endif

@@ -1,32 +1,36 @@
-/*#ifndef ROOM_H
-#define ROOM_H
-
-#include <string>
-#include <vector>
-#include "Room.h"
-#include "Item.h"
-*/
 #include "Item.h"
 #include "Room.h"
+#include "Door.h"
 
+#include <algorithm>
 #include <string>
 #include <vector>
 
-Room::Room(std::string description){
-		this->description = description;
+
+
+Room::Room(const std::string& description)
+	:description(description)
+{
+	this->inventory = std::vector<Item>();
+	this->doors = std::vector<Door>();
 }
 
-void Room::removeFromRoomInventory(Item item){
-	for(int i = 0 ; i < inventory.size(); i++){
-		if (inventory[i] == item){
-			inventory.erase(inventory.begin()+i);
-		}
-	}
+void Room::addDoorToRoom(const Door& door){
+	doors.push_back(door);
+
 }
 
-std::string Room::getDescription() const{
-	return this->description;
+//This method removes an item passed in from the room inventory
+void Room::removeFromRoomInventory(const Item& item)
+{
+	std::remove(inventory.begin(), inventory.end(), item);
 }
 
-//#endif 
-// ROOM_H 
+void Room::addItemToRoomInventory(const Item& item){
+	inventory.push_back(item);
+}
+
+const std::string& Room::getDescription() const
+{
+	return description;
+}
