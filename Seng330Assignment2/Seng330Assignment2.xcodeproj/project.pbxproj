@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70257A351BF8022300AB80B7 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70257A341BF8022200AB80B7 /* gtest.framework */; };
+		70257A371BF8025700AB80B7 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70257A341BF8022200AB80B7 /* gtest.framework */; };
+		70257A391BF8031F00AB80B7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257581BF7F90E00FA863D /* main.cpp */; };
 		70F257411BF7F66600FA863D /* Door.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257401BF7F66600FA863D /* Door.cpp */; };
 		70F2574C1BF7F66F00FA863D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257431BF7F66F00FA863D /* Game.cpp */; };
 		70F2574D1BF7F66F00FA863D /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257441BF7F66F00FA863D /* Item.cpp */; };
 		70F2574F1BF7F66F00FA863D /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257471BF7F66F00FA863D /* Player.cpp */; };
 		70F257511BF7F66F00FA863D /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F2574A1BF7F66F00FA863D /* Room.cpp */; };
+		70F257591BF7F90E00FA863D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257581BF7F90E00FA863D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +28,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		70F257541BF7F90E00FA863D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		70257A341BF8022200AB80B7 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../../../../../Library/Frameworks/gtest.framework; sourceTree = "<group>"; };
+		70B2A2851BF7FBEA00A21604 /* Users */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Users; path = ../../../..; sourceTree = "<group>"; };
+		70B2A2871BF7FC0000A21604 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Library; path = ../../../../../Library; sourceTree = "<group>"; };
 		70F257361BF7F62200FA863D /* Seng330Assignment2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Seng330Assignment2; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F257401BF7F66600FA863D /* Door.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Door.cpp; sourceTree = "<group>"; };
 		70F257421BF7F66F00FA863D /* Door.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Door.h; sourceTree = "<group>"; };
@@ -37,6 +53,8 @@
 		70F257481BF7F66F00FA863D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		70F2574A1BF7F66F00FA863D /* Room.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Room.cpp; sourceTree = "<group>"; };
 		70F2574B1BF7F66F00FA863D /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		70F257561BF7F90E00FA863D /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F257581BF7F90E00FA863D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70257A371BF8025700AB80B7 /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F257531BF7F90E00FA863D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70257A351BF8022300AB80B7 /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +80,11 @@
 		70F2572D1BF7F62200FA863D = {
 			isa = PBXGroup;
 			children = (
+				70257A341BF8022200AB80B7 /* gtest.framework */,
+				70B2A2871BF7FC0000A21604 /* Library */,
+				70B2A2851BF7FBEA00A21604 /* Users */,
 				70F257381BF7F62200FA863D /* Seng330Assignment2 */,
+				70F257571BF7F90E00FA863D /* UnitTests */,
 				70F257371BF7F62200FA863D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				70F257361BF7F62200FA863D /* Seng330Assignment2 */,
+				70F257561BF7F90E00FA863D /* UnitTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +112,14 @@
 				70F257401BF7F66600FA863D /* Door.cpp */,
 			);
 			path = Seng330Assignment2;
+			sourceTree = "<group>";
+		};
+		70F257571BF7F90E00FA863D /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				70F257581BF7F90E00FA863D /* main.cpp */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +142,23 @@
 			productReference = 70F257361BF7F62200FA863D /* Seng330Assignment2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		70F257551BF7F90E00FA863D /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F2575A1BF7F90E00FA863D /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				70F257521BF7F90E00FA863D /* Sources */,
+				70F257531BF7F90E00FA863D /* Frameworks */,
+				70F257541BF7F90E00FA863D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 70F257561BF7F90E00FA863D /* UnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -112,6 +169,9 @@
 				ORGANIZATIONNAME = seng330;
 				TargetAttributes = {
 					70F257351BF7F62200FA863D = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					70F257551BF7F90E00FA863D = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
@@ -129,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				70F257351BF7F62200FA863D /* Seng330Assignment2 */,
+				70F257551BF7F90E00FA863D /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,11 +199,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70257A391BF8031F00AB80B7 /* main.cpp in Sources */,
 				70F2574D1BF7F66F00FA863D /* Item.cpp in Sources */,
 				70F2574C1BF7F66F00FA863D /* Game.cpp in Sources */,
 				70F2574F1BF7F66F00FA863D /* Player.cpp in Sources */,
 				70F257511BF7F66F00FA863D /* Room.cpp in Sources */,
 				70F257411BF7F66600FA863D /* Door.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F257521BF7F90E00FA863D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F257591BF7F90E00FA863D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +301,10 @@
 		70F2573E1BF7F62200FA863D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -238,6 +312,32 @@
 		70F2573F1BF7F62200FA863D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		70F2575B1BF7F90E00FA863D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		70F2575C1BF7F90E00FA863D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -261,6 +361,16 @@
 				70F2573F1BF7F62200FA863D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70F2575A1BF7F90E00FA863D /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F2575B1BF7F90E00FA863D /* Debug */,
+				70F2575C1BF7F90E00FA863D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

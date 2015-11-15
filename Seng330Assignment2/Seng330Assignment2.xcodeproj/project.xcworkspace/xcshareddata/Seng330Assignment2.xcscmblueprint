@@ -1,0 +1,46 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E70D5F4A78FE4AF2CC64DA64B9301E4EC204B205",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "861a406c-534a-0410-8894-cb66d6ee9925++505" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E70D5F4A78FE4AF2CC64DA64B9301E4EC204B205" : 0,
+    "008763F6B3020CEB301D781337575EB040C83338" : 0,
+    "861a406c-534a-0410-8894-cb66d6ee9925++505" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "03770634-9DF4-4D57-A5D8-EFDBD54A70CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E70D5F4A78FE4AF2CC64DA64B9301E4EC204B205" : "..\/.Trash\/Seng330Assignment2",
+    "008763F6B3020CEB301D781337575EB040C83338" : "..\/.Trash\/seng330%207.05.39%20PM",
+    "861a406c-534a-0410-8894-cb66d6ee9925++505" : "..\/.Trash\/googletest-read-only"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Seng330Assignment2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Seng330Assignment2\/Seng330Assignment2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jorshi\/seng330",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "008763F6B3020CEB301D781337575EB040C83338"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jorshi\/seng330.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "008763F6B3020CEB301D781337575EB040C83338"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/googletest.googlecode.com\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "861a406c-534a-0410-8894-cb66d6ee9925++505"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AbstractAlgebra\/Seng330Assignment2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E70D5F4A78FE4AF2CC64DA64B9301E4EC204B205"
+    }
+  ]
+}
