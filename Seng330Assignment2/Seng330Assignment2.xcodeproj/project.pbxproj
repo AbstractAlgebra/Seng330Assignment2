@@ -9,16 +9,30 @@
 /* Begin PBXBuildFile section */
 		70257A351BF8022300AB80B7 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70257A341BF8022200AB80B7 /* gtest.framework */; };
 		70257A371BF8025700AB80B7 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70257A341BF8022200AB80B7 /* gtest.framework */; };
-		70257A391BF8031F00AB80B7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257581BF7F90E00FA863D /* main.cpp */; };
+		703409681BF806A40003C0EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 703409671BF806A40003C0EC /* main.cpp */; };
+		7034096D1BF80AA10003C0EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 703409671BF806A40003C0EC /* main.cpp */; };
+		7034096E1BF80ABB0003C0EC /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70257A341BF8022200AB80B7 /* gtest.framework */; };
+		70D1CDFF1BF94D7600A9C613 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257441BF7F66F00FA863D /* Item.cpp */; };
+		70D1CE001BF94D7800A9C613 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257471BF7F66F00FA863D /* Player.cpp */; };
+		70D1CE011BF94D7900A9C613 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F2574A1BF7F66F00FA863D /* Room.cpp */; };
+		70D1CE021BF94D7B00A9C613 /* Door.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257401BF7F66600FA863D /* Door.cpp */; };
 		70F257411BF7F66600FA863D /* Door.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257401BF7F66600FA863D /* Door.cpp */; };
 		70F2574C1BF7F66F00FA863D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257431BF7F66F00FA863D /* Game.cpp */; };
 		70F2574D1BF7F66F00FA863D /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257441BF7F66F00FA863D /* Item.cpp */; };
 		70F2574F1BF7F66F00FA863D /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257471BF7F66F00FA863D /* Player.cpp */; };
 		70F257511BF7F66F00FA863D /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F2574A1BF7F66F00FA863D /* Room.cpp */; };
-		70F257591BF7F90E00FA863D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70F257581BF7F90E00FA863D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		703409631BF806A40003C0EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		70F257341BF7F62200FA863D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +55,9 @@
 
 /* Begin PBXFileReference section */
 		70257A341BF8022200AB80B7 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../../../../../Library/Frameworks/gtest.framework; sourceTree = "<group>"; };
+		703409651BF806A40003C0EC /* GameUnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameUnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		703409671BF806A40003C0EC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		703409791BF814E20003C0EC /* add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = add.h; sourceTree = "<group>"; };
 		70B2A2851BF7FBEA00A21604 /* Users */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Users; path = ../../../..; sourceTree = "<group>"; };
 		70B2A2871BF7FC0000A21604 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Library; path = ../../../../../Library; sourceTree = "<group>"; };
 		70F257361BF7F62200FA863D /* Seng330Assignment2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Seng330Assignment2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,10 +71,17 @@
 		70F2574A1BF7F66F00FA863D /* Room.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Room.cpp; sourceTree = "<group>"; };
 		70F2574B1BF7F66F00FA863D /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
 		70F257561BF7F90E00FA863D /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
-		70F257581BF7F90E00FA863D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		703409621BF806A40003C0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7034096E1BF80ABB0003C0EC /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70F257331BF7F62200FA863D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		703409661BF806A40003C0EC /* GameUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				703409671BF806A40003C0EC /* main.cpp */,
+			);
+			path = GameUnitTests;
+			sourceTree = "<group>";
+		};
 		70F2572D1BF7F62200FA863D = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +116,7 @@
 				70B2A2871BF7FC0000A21604 /* Library */,
 				70B2A2851BF7FBEA00A21604 /* Users */,
 				70F257381BF7F62200FA863D /* Seng330Assignment2 */,
-				70F257571BF7F90E00FA863D /* UnitTests */,
+				703409661BF806A40003C0EC /* GameUnitTests */,
 				70F257371BF7F62200FA863D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +126,7 @@
 			children = (
 				70F257361BF7F62200FA863D /* Seng330Assignment2 */,
 				70F257561BF7F90E00FA863D /* UnitTests */,
+				703409651BF806A40003C0EC /* GameUnitTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,21 +143,31 @@
 				70F2574A1BF7F66F00FA863D /* Room.cpp */,
 				70F2574B1BF7F66F00FA863D /* Room.h */,
 				70F257401BF7F66600FA863D /* Door.cpp */,
+				703409791BF814E20003C0EC /* add.h */,
 			);
 			path = Seng330Assignment2;
-			sourceTree = "<group>";
-		};
-		70F257571BF7F90E00FA863D /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				70F257581BF7F90E00FA863D /* main.cpp */,
-			);
-			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		703409641BF806A40003C0EC /* GameUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7034096B1BF806A40003C0EC /* Build configuration list for PBXNativeTarget "GameUnitTests" */;
+			buildPhases = (
+				703409611BF806A40003C0EC /* Sources */,
+				703409621BF806A40003C0EC /* Frameworks */,
+				703409631BF806A40003C0EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameUnitTests;
+			productName = GameUnitTests;
+			productReference = 703409651BF806A40003C0EC /* GameUnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
 		70F257351BF7F62200FA863D /* Seng330Assignment2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70F2573D1BF7F62200FA863D /* Build configuration list for PBXNativeTarget "Seng330Assignment2" */;
@@ -168,6 +211,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = seng330;
 				TargetAttributes = {
+					703409641BF806A40003C0EC = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					70F257351BF7F62200FA863D = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -190,16 +236,28 @@
 			targets = (
 				70F257351BF7F62200FA863D /* Seng330Assignment2 */,
 				70F257551BF7F90E00FA863D /* UnitTests */,
+				703409641BF806A40003C0EC /* GameUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		703409611BF806A40003C0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703409681BF806A40003C0EC /* main.cpp in Sources */,
+				70D1CE021BF94D7B00A9C613 /* Door.cpp in Sources */,
+				70D1CDFF1BF94D7600A9C613 /* Item.cpp in Sources */,
+				70D1CE011BF94D7900A9C613 /* Room.cpp in Sources */,
+				70D1CE001BF94D7800A9C613 /* Player.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70F257321BF7F62200FA863D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70257A391BF8031F00AB80B7 /* main.cpp in Sources */,
 				70F2574D1BF7F66F00FA863D /* Item.cpp in Sources */,
 				70F2574C1BF7F66F00FA863D /* Game.cpp in Sources */,
 				70F2574F1BF7F66F00FA863D /* Player.cpp in Sources */,
@@ -212,19 +270,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70F257591BF7F90E00FA863D /* main.cpp in Sources */,
+				7034096D1BF80AA10003C0EC /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		703409691BF806A40003C0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7034096A1BF806A40003C0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		70F2573B1BF7F62200FA863D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -267,7 +347,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -345,6 +425,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7034096B1BF806A40003C0EC /* Build configuration list for PBXNativeTarget "GameUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				703409691BF806A40003C0EC /* Debug */,
+				7034096A1BF806A40003C0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		70F257311BF7F62200FA863D /* Build configuration list for PBXProject "Seng330Assignment2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

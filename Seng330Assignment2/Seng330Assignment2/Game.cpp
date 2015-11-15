@@ -7,7 +7,7 @@
 #include "Player.h"
 #include "Door.h"
 
-/*
+
 int main()
 {
 	//setup of room
@@ -74,4 +74,4 @@ int main()
 	std::cout << std::endl << "Congratulations " << player.getName() << " you escaped the room!" << std::endl; 
 
 	return 0;
-}*/
+}
