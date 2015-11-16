@@ -7,7 +7,7 @@
 #include <vector>
 
 
-
+/*! Construct a room by passing in the description of the room*/
 Room::Room(const std::string& description)
 	:description(description)
 {
@@ -15,29 +15,29 @@ Room::Room(const std::string& description)
 	this->doors = std::vector<Door>();
 }
 
-//This method adds a door to the room
+/*! This method adds a door to the room */
 void Room::addDoorToRoom(Door door){
 	doors.push_back(door);
 
 }
 
-//This method removes an item passed in from the room inventory
+/*! Removes an item passed in from the room inventory*/
 void Room::removeFromRoomInventory(const Item& item)
 {
 	std::remove(inventory.begin(), inventory.end(), item);
 }
 
-//This method adds an item to the room inventory
+/*! Adds a passed in item to the room's inventory */
 void Room::addItemToRoomInventory(const Item& item){
 	inventory.push_back(item);
 }
 
-//This method gets the description of a room
+/*! Returns the description of the room specified */
 const std::string& Room::getDescription() const
 {
 	return description;
 }
-
+/*! Sets the description of the room specified*/
 void Room::setDescription(const std::string& newDescription){
 	this->description = newDescription;
 }

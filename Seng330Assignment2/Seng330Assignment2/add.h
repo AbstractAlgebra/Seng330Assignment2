@@ -6,15 +6,14 @@
 //  Copyright © 2015 seng330. All rights reserved.
 //
 
-#ifndef add_hpp
-#define add_hpp
+#ifndef add_h
+#define add_h
 
 #include <stdio.h>
 
+/*! This testing method adds two numbers together*/
 int addition(int a, int b){
     return a+b;
 }
 
-#endif /* add_hpp */
-
-
+#endif /* add_h */
