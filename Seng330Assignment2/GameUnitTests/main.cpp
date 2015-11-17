@@ -48,7 +48,7 @@ TEST (Seng330Assignment2, ItemComparisonTest){
 }
 
 /*!
- Here is a test that tests doors start off locked and can unlock properly
+ Here is a test that tests that doors start off locked and can unlock properly
  */
 TEST (Seng330Assignment2, DoorTest){
     Door d1;

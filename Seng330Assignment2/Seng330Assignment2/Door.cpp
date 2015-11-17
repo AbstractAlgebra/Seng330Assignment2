@@ -13,3 +13,4 @@ void Door::unlock(){
 bool Door::isLocked(){
 	return locked;
 }
+

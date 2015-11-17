@@ -6,10 +6,12 @@
 #include "Room.h"
 #include "Player.h"
 #include "Door.h"
+#include "game.pb.h"
 
 
 int main()
 {
+    game::Player p1;
 	//setup of room
 	Room room1("room with a key on the floor and a locked door on the wall");
 
@@ -28,7 +30,9 @@ int main()
 	std::cin >> inputName;
 	std::cout << std::endl;
 
-	Player player(inputName);
+    p1.set_name(inputName);
+    
+    Player* player = new Player(p1.name());
 
 	//declaration of command string 
 	std::string command;
@@ -46,7 +50,7 @@ int main()
 		if (((command == "pick up key") || (command == "take key") || (command == "take key") || (command == "grab key")) && room1.getDescription()=="room with a key on the floor and a locked door on the wall"){
 			room1.setDescription("room with a locked door on the wall");
 			std::cout << std::endl;
-			player.addItemToPlayerInventory(key1);
+			player->addItemToPlayerInventory(key1);
 			
 			continue;	
 		}
@@ -54,7 +58,7 @@ int main()
 		//handles command to unlock door
 		else if (((command == "unlock door") || (command == "use key on door") || (command == "use key with door") || (command == "key door")) && room1.getDescription()=="room with a locked door on the wall"){
 			door1.unlock();
-			player.removeItemFromPlayerInventory(key1);
+			player->removeItemFromPlayerInventory(key1);
 			room1.setDescription("room with an unlocked door on the wall");
 			std::cout << std::endl;
 			continue;
@@ -71,7 +75,7 @@ int main()
 		}
 	}
 
-	std::cout << std::endl << "Congratulations " << player.getName() << " you escaped the room!" << std::endl; 
+	std::cout << std::endl << "Congratulations " << player->getName() << " you escaped the room!" << std::endl;
 
 	return 0;
 }
