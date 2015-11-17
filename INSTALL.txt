@@ -1,6 +1,6 @@
 To build this program, you first must be using Mac OS X.
-Then you must configure the Google Test Framework.
-Followed by Google Protocol Buffers.
+Then you must configure the Google Test Framework. https://code.google.com/p/googletest/
+Followed by configuring Google Protocol Buffers. https://developers.google.com/protocol-buffers/?hl=en
 
 Then you navigate the the Seng330Assignment2 subdirectory, and from there you can open the "Seng330Assignment2.xcodeproj" file.
 Then from there you navigate to the Seng330Assignment2 scheme to build and run the application.
