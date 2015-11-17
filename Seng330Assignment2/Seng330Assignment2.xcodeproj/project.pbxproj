@@ -78,6 +78,7 @@
 		70B2A2871BF7FC0000A21604 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Library; path = ../../../../../Library; sourceTree = "<group>"; };
 		70C672031BFAC439009A76F8 /* libprotobuf.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libprotobuf.9.dylib; path = ../../../../../usr/local/lib/libprotobuf.9.dylib; sourceTree = "<group>"; };
 		70C672051BFAC472009A76F8 /* libprotobuf-lite.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libprotobuf-lite.9.dylib"; path = "../../../../../usr/local/lib/libprotobuf-lite.9.dylib"; sourceTree = "<group>"; };
+		70C672071BFAD030009A76F8 /* game.proto */ = {isa = PBXFileReference; lastKnownFileType = text; path = game.proto; sourceTree = "<group>"; };
 		70D1CE091BFA6C6300A9C613 /* game.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.pb.cc; sourceTree = "<group>"; };
 		70D1CE0A1BFA6C6300A9C613 /* game.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.pb.h; sourceTree = "<group>"; };
 		70F257361BF7F62200FA863D /* Seng330Assignment2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Seng330Assignment2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +161,7 @@
 			children = (
 				70F257421BF7F66F00FA863D /* Door.h */,
 				70F257431BF7F66F00FA863D /* Game.cpp */,
+				70C672071BFAD030009A76F8 /* game.proto */,
 				70F257441BF7F66F00FA863D /* Item.cpp */,
 				70F257451BF7F66F00FA863D /* Item.h */,
 				70F257471BF7F66F00FA863D /* Player.cpp */,
